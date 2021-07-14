@@ -18,8 +18,8 @@ public class ForTester {
         }
         System.out.println("Cutting pizza");
 
-        int row = 15;
-        int col = 30;
+        int row = 15; // 幾列?
+        int col = 30; // 幾欄?
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
