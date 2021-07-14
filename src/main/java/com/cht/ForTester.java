@@ -1,12 +1,20 @@
 package com.cht;
 
+import java.util.Scanner;
+
 public class ForTester {
     public static void main(String[] args) {
-
+        String data = String.valueOf(123);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many slices?");
+        String s = scanner.next();
         try {
-            System.out.println(8 / 0);
-        } catch (Exception e) {
-            System.out.println("Problem!");
+            int n = Integer.parseInt(s);
+            System.out.println(8 / n);
+        } catch (ArithmeticException e) {
+            System.out.println("不切，謝謝!");
+        } catch (NumberFormatException e) {
+            System.out.println("資料有誤!");
         }
         System.out.println("Cutting pizza");
 
