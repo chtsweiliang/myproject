@@ -3,6 +3,13 @@ package com.cht;
 public class ForTester {
     public static void main(String[] args) {
 
+        try {
+            System.out.println(8 / 0);
+        } catch (Exception e) {
+            System.out.println("Problem!");
+        }
+        System.out.println("Cutting pizza");
+
         int row = 15;
         int col = 30;
 
