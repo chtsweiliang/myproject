@@ -1,0 +1,5 @@
+a,Coca Cola,20
+b,Sprite,18
+c,Coffee,30
+d,Water,15
+e,Orange juice,26
