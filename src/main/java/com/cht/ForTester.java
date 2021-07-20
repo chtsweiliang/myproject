@@ -4,19 +4,6 @@ import java.util.Scanner;
 
 public class ForTester {
     public static void main(String[] args) {
-        String data = String.valueOf(123);
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many slices?");
-        String s = scanner.next();
-        try {
-            int n = Integer.parseInt(s);
-            System.out.println(8 / n);
-        } catch (ArithmeticException e) {
-            System.out.println("不切，謝謝!");
-        } catch (NumberFormatException e) {
-            System.out.println("資料有誤!");
-        }
-        System.out.println("Cutting pizza");
 
         int row = 15; // 幾列?
         int col = 30; // 幾欄?
@@ -31,7 +18,13 @@ public class ForTester {
             }
             System.out.println();
         }
-//        drawAnX();
+        drawAnX();
+        System.out.println();
+        drawAnSquare();
+        System.out.println();
+        drawAnRightTriangle1();
+        System.out.println();
+        drawAnRightTriangle2();
 
     }
 
@@ -50,4 +43,44 @@ public class ForTester {
             System.out.println();
         }
     }
+
+    private static void drawAnSquare() {
+        int row = 10;
+        int col = 10;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void drawAnRightTriangle1() {
+        int row = 10;
+        int col = 10;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (i > j) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+
+            }
+            System.out.println();
+        }
+    }
+
+    private static void drawAnRightTriangle2() {
+        int row = 10;
+        int col = 10;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
 }
