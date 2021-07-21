@@ -23,7 +23,7 @@ public class Scoring {
                             + stu.getAverage() + " " + stu.getGrading());
                     students.add(stu);
                     line = br.readLine();
-                    i++;
+//                    i++;
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
